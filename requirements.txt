@@ -1,5 +1,8 @@
-# Install CPU-only torch first to keep the download small:
+# CPU-only torch keeps installs small (~200 MB vs multi-GB CUDA build),
+# which matters on Streamlit Community Cloud's free tier.
+# Install locally with:
 #   pip install torch --index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
 streamlit>=1.50
 torch>=2.4
 transformers>=4.40
