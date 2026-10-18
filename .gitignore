@@ -1,0 +1,16 @@
+# Secrets — never commit
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# HuggingFace / model caches
+.cache/
+*.bin
+*.safetensors
+
+# Streamlit
+.streamlit/secrets.toml
